@@ -64,6 +64,8 @@ The following coefficients must be defined for each pair of atoms types via the 
 
 The last coefficient is optional.  If not specified, the global morse cutoff is used.
 
+### Restrictions
+
 These pairs only work with `atom_style sphere`. In the input file, a fix needs to be defined to input the normals of each of the atoms. An example is given below:
 
    `fix Vectors all property/atom d_normalX d_normalY d_normalZ`
@@ -75,3 +77,12 @@ With this example, the `read_data` command will look like this:
 'Normals' will be the header in the data file, below which the atom ID along with three normal components (along x, y, and z axes) given for each atom. 
 
 This example is implemented in the test folder given with this project.
+
+### References
+
+[1] Szeliski, R. & Tonnesen, D. (1992). Surface Modeling with Oriented Particle Systems. Computer Graphics, 26(2):185-194.
+
+[2] Tonnesen, D. (1998). Dynamically Coupled Particle Systems for Geometric Modeling, Reconstruction, and Animation. University of Toronto. Retrieved from http://www.dgp.toronto.edu/~davet/phd/index.html
+
+[3] Singh, A.R. (2018). Study of Zero and Finite Temperature Response of Discrete Deformable Surfaces. UCLA. ProQuest ID: Singh_ucla_0031D_17348. Merritt ID: ark:/13030/m5sz1b5x. Retrieved from https://escholarship.org/uc/item/6cg965pq
+

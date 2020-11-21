@@ -47,7 +47,7 @@ where
 
 The 4 potentials used are Morse Potential, Co-Planarity Potential, Co-Normality Potential and Co-Corcularit Potential. Together, their weighted sum defines the potential energy of oriented particles.
 
-The following coefficients must be defined for each pair of atoms types via the :doc:`pair_coeff <pair_coeff>` command as in the examples above, or in the data file or restart files read by the :doc:`read_data <read_data>` or :doc:`read_restart <read_restart>` commands (from LAMMPS doc):
+The first three coefficients and the cutoff can be defined for each pair of atoms types via the :doc:`pair_coeff <pair_coeff>` command as in the examples above, or in the data file or restart files read by the :doc:`read_data <read_data>` or :doc:`read_restart <read_restart>` commands (from LAMMPS doc). The remaining coefficients remain same for all atom pairs, hence needs to be specified in the main input file alongside `pair_coeff * *`:
 
 * D₀ (energy units)
 * ![f12](https://latex.codecogs.com/svg.latex?\small&space;\alpha) (1/distance units)

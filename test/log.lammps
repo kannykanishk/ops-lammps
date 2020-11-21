@@ -1,0 +1,64 @@
+LAMMPS (18 Sep 2020)
+units		real
+atom_style	sphere
+
+fix		Vectors all property/atom d_normalX d_normalY d_normalZ
+
+read_data	data.test.txt fix Vectors NULL Normals
+Reading data file ...
+  orthogonal box = (-2.1000000 -2.1000000 0.0000000) to (2.1000000 2.1000000 2.5579000)
+  1 by 1 by 1 MPI processor grid
+  reading atoms ...
+  60 atoms
+  read_data CPU = 0.002 seconds
+
+pair_style	ops 2.5
+pair_coeff	* * 100.0 2.0 1.5 1 0 1 1 1 1 1 1
+
+dump 1 all custom 10 dumpOPS_forces id fx fy fz
+
+thermo		10
+run		10
+Neighbor list info ...
+  update every 1 steps, delay 10 steps, check yes
+  max neighbors/atom: 2000, page size: 100000
+  master list distance cutoff = 4.5
+  ghost atom cutoff = 4.5
+  binsize = 2.25, bins = 2 2 2
+  1 neighbor lists, perpetual/occasional/extra = 1 0 0
+  (1) pair ops, perpetual
+      attributes: half, newton on
+      pair build: half/bin/atomonly/newton
+      stencil: half/bin/3d/newton
+      bin: standard
+Per MPI rank memory allocation (min/avg/max) = 5.685 | 5.685 | 5.685 Mbytes
+Step Temp E_pair E_mol TotEng Press 
+       0            0     10772269            0     10772269     73139442 
+      10            0     10772269            0     10772269     73139442 
+Loop time of 0.017845 on 1 procs for 10 steps with 60 atoms
+
+Performance: 48.417 ns/day, 0.496 hours/ns, 560.381 timesteps/s
+99.3% CPU use with 1 MPI tasks x no OpenMP threads
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 0.016862   | 0.016862   | 0.016862   |   0.0 | 94.49
+Neigh   | 0          | 0          | 0          |   0.0 |  0.00
+Comm    | 0.000836   | 0.000836   | 0.000836   |   0.0 |  4.68
+Output  | 0.000115   | 0.000115   | 0.000115   |   0.0 |  0.64
+Modify  | 2e-06      | 2e-06      | 2e-06      |   0.0 |  0.01
+Other   |            | 3e-05      |            |       |  0.17
+
+Nlocal:        60.0000 ave          60 max          60 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+Nghost:        2370.00 ave        2370 max        2370 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+Neighs:        15070.0 ave       15070 max       15070 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+
+Total # of neighbors = 15070
+Ave neighs/atom = 251.16667
+Neighbor list builds = 0
+Dangerous builds = 0
+Total wall time: 0:00:00

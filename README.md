@@ -6,7 +6,6 @@ Steps to use:
 3. Use it like any other pair_style.
 
 # pair_style ops
----
 
 ### Syntax
 
@@ -15,7 +14,7 @@ Steps to use:
 * style = *ops*
 * args = list of arguments for a particular style
 ```
-    *ops* args = cutoff
+    ops args = cutoff
     cutoff = global cutoff for Morse interactions (distance units)
 ```
 ### Examples
@@ -32,9 +31,13 @@ Style *ops* computes pairwise interactions with the formula:
 where
 
    ![f2](https://latex.codecogs.com/svg.latex?\small&space;\phi_m(r_{ij})&space;=&space;D_0&space;\left[&space;e^{-&space;2&space;\alpha&space;(r&space;-&space;r_0)}&space;-&space;2&space;e^{-&space;\alpha&space;(r&space;-&space;r_0)}&space;\right])
+   
    ![f3](https://latex.codecogs.com/svg.latex?\small&space;\phi_p(n_i,r_{ij})&space;=&space;(n_i&space;\cdot&space;r_{ij})^2\psi(r_{ij}))
+   
    ![f4](https://latex.codecogs.com/svg.latex?\small&space;\phi_n(n_i,n_j,r_{ij})&space;=&space;|n_i&space;-&space;n_j|^2\psi(r_{ij}))
+   
    ![f5](https://latex.codecogs.com/svg.latex?\small&space;\phi_c(n_i,n_j,r_{ij})&space;=&space;((n_i&space;&plus;&space;n_j)&space;\cdot&space;r_{ij})^2\psi(r_{ij}))
+   
    ![f6](https://latex.codecogs.com/svg.latex?\small&space;\psi(r_{ij})=Ke^{(-\frac{x^2}{2a^2}-\frac{y^2}{2b^2}-\frac{z^2}{2c^2})})
    
 - Rc is the cutoff.

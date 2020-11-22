@@ -57,9 +57,9 @@ The first three coefficients and the cutoff can be defined for each pair of atom
 * ![f9](https://latex.codecogs.com/svg.latex?\small&space;\alpha_n) (energy units)
 * ![f10](https://latex.codecogs.com/svg.latex?\small&space;\alpha_c) (energy units)
 * K
-* a (1/distance units)
-* b (1/distance units)
-* c (1/distance units)
+* a (distance units)
+* b (distance units)
+* c (distance units)
 * cutoff (distance units)
 
 The last coefficient is optional.  If not specified, the global morse cutoff is used.

@@ -45,7 +45,7 @@ where
 - ![f7](https://latex.codecogs.com/svg.latex?\small&space;\alpha_m), ![f8](https://latex.codecogs.com/svg.latex?\small&space;\alpha_p), ![f9](https://latex.codecogs.com/svg.latex?\small&space;\alpha_n), ![f10](https://latex.codecogs.com/svg.latex?\small&space;\alpha_c) are weight constants for Morse potential, Co-planarity potential, Co-normality potential and Co-Circularity potential, respectively.
 - a, b, c are constants for weighting function ![f11](https://latex.codecogs.com/svg.latex?\small&space;\psi(r_{ij})). The weighting function provides either circular symmetricity (a=b=c), or weights particles more in certain planes.
 
-The 4 potentials used are Morse Potential, Co-Planarity Potential, Co-Normality Potential and Co-Corcularit Potential. Together, their weighted sum defines the potential energy of oriented particles.
+The 4 potentials used are Morse Potential, Co-Planarity Potential, Co-Normality Potential and Co-Corcularity Potential. Together, their weighted sum defines the potential energy of oriented particles.
 
 The first three coefficients and the cutoff can be defined for each pair of atoms types via the :doc:`pair_coeff <pair_coeff>` command as in the examples above, or in the data file or restart files read by the :doc:`read_data <read_data>` or :doc:`read_restart <read_restart>` commands (from LAMMPS doc). The remaining coefficients remain same for all atom pairs, hence needs to be specified in the main input file alongside `pair_coeff * *`:
 
@@ -62,7 +62,7 @@ The first three coefficients and the cutoff can be defined for each pair of atom
 * c (distance units)
 * cutoff (distance units)
 
-The last coefficient is optional.  If not specified, the global morse cutoff is used.
+The last coefficient is optional. If not specified, the global morse cutoff is used.
 
 ### Restrictions
 

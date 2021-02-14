@@ -37,26 +37,26 @@ where
 <p align="center"><img src="https://latex.codecogs.com/gif.latex?%5Cpsi%28r_%7Bij%7D%29%3DKe%5E%7B%28-%5Cfrac%7Bx%5E2%7D%7B2a%5E2%7D-%5Cfrac%7By%5E2%7D%7B2b%5E2%7D-%5Cfrac%7Bz%5E2%7D%7B2c%5E2%7D%29%7D" align=middle /></p>
    
 - <img src="https://latex.codecogs.com/gif.latex?r_c" align=middle /> is the cutoff.
-- <img src="https://rawgit.com/kannykanishk/ops-lammps/main/svgs/42fbe61bcc38cd8c7cb8a2f4abc9b4c7.svg?invert_in_darkmode" align=middle width=20.16214364999999pt height=22.465723500000017pt/>, <img src="https://rawgit.com/kannykanishk/ops-lammps/main/svgs/d6328eaebbcd5c358f426dbea4bdbf70.svg?invert_in_darkmode" align=middle width=15.13700594999999pt height=22.465723500000017pt/> are constants.
-- <img src="https://rawgit.com/kannykanishk/ops-lammps/main/svgs/812375f957f3b78a317a4d7150c3ae73.svg?invert_in_darkmode" align=middle width=22.18049624999999pt height=14.15524440000002pt/>, <img src="https://rawgit.com/kannykanishk/ops-lammps/main/svgs/6c437e6db92ada6d18b2c92382e20721.svg?invert_in_darkmode" align=middle width=17.292125399999993pt height=14.15524440000002pt/>, <img src="https://rawgit.com/kannykanishk/ops-lammps/main/svgs/17275f74aac37adec4b7e565a0f8199a.svg?invert_in_darkmode" align=middle width=18.64167029999999pt height=14.15524440000002pt/>, <img src="https://rawgit.com/kannykanishk/ops-lammps/main/svgs/971651e87c9aebb6ec102860c98ae161.svg?invert_in_darkmode" align=middle width=16.390298099999992pt height=14.15524440000002pt/> are weight constants for Morse potential, Co-planarity potential, Co-normality potential and Co-Circularity potential, respectively.
-- <img src="https://rawgit.com/kannykanishk/ops-lammps/main/svgs/c7511ce56cd9c8457f7a29917f39df8d.svg?invert_in_darkmode" align=middle width=37.46952164999999pt height=22.831056599999986pt/> are constants for weighting function <img src="https://rawgit.com/kannykanishk/ops-lammps/main/svgs/a5c4119e5685d6ff54503ba7c63bbcdb.svg?invert_in_darkmode" align=middle width=43.07662424999999pt height=24.65753399999998pt/>. The weighting function provides either circular symmetricity (<img src="https://rawgit.com/kannykanishk/ops-lammps/main/svgs/b11e6eeff71a96de798a5e4addc53da9.svg?invert_in_darkmode" align=middle width=66.6930165pt height=22.831056599999986pt/>), or weights particles more in certain planes.
+- Do, K are constants.
+- <img src="https://latex.codecogs.com/gif.latex?%5Calpha_m" align=middle />, <img src="https://latex.codecogs.com/gif.latex?%5Calpha_p" align=middle />, <img src="https://latex.codecogs.com/gif.latex?%5Calpha_n" align=middle />, <img src="https://latex.codecogs.com/gif.latex?%5Calpha_c" align=middle /> are weight constants for Morse potential, Co-planarity potential, Co-normality potential and Co-Circularity potential, respectively.
+- a, b, c are constants for weighting function <img src="https://latex.codecogs.com/gif.latex?%5Cpsi%28r_%7Bij%7D%29" align=middle />. The weighting function provides either circular symmetricity (<img src="https://rawgit.com/kannykanishk/ops-lammps/main/svgs/b11e6eeff71a96de798a5e4addc53da9.svg?invert_in_darkmode" align=middle width=66.6930165pt height=22.831056599999986pt/>), or weights particles more in certain planes.
 
 The 4 potentials used are Morse Potential, Co-Planarity Potential, Co-Normality Potential and Co-Corcularity Potential. Together, their weighted sum defines the potential energy of oriented particles.
 
 The first three coefficients and the cutoff can be defined for each pair of atoms types via the :doc:`pair_coeff <pair_coeff>` command as in the examples above, or in the data file or restart files read by the :doc:`read_data <read_data>` or :doc:`read_restart <read_restart>` commands (from LAMMPS doc). The remaining coefficients remain same for all atom pairs, hence needs to be specified in the main input file alongside `pair_coeff * *`:
 
-* <img src="https://rawgit.com/kannykanishk/ops-lammps/main/svgs/084ad41df3595da9790e07d7d2fc9849.svg?invert_in_darkmode" align=middle width=20.09819954999999pt height=22.465723500000017pt/> (energy units)
-* <img src="https://rawgit.com/kannykanishk/ops-lammps/main/svgs/c745b9b57c145ec5577b82542b2df546.svg?invert_in_darkmode" align=middle width=10.57650494999999pt height=14.15524440000002pt/> (1/distance units)
-* <img src="https://rawgit.com/kannykanishk/ops-lammps/main/svgs/c1deb563f9f030f805445b5f3197054c.svg?invert_in_darkmode" align=middle width=13.904922899999988pt height=14.15524440000002pt/> (distance units)
-* <img src="https://rawgit.com/kannykanishk/ops-lammps/main/svgs/812375f957f3b78a317a4d7150c3ae73.svg?invert_in_darkmode" align=middle width=22.18049624999999pt height=14.15524440000002pt/> (energy units) 
-* <img src="https://rawgit.com/kannykanishk/ops-lammps/main/svgs/6c437e6db92ada6d18b2c92382e20721.svg?invert_in_darkmode" align=middle width=17.292125399999993pt height=14.15524440000002pt/> (energy units)
-* <img src="https://rawgit.com/kannykanishk/ops-lammps/main/svgs/17275f74aac37adec4b7e565a0f8199a.svg?invert_in_darkmode" align=middle width=18.64167029999999pt height=14.15524440000002pt/> (energy units)
-* <img src="https://rawgit.com/kannykanishk/ops-lammps/main/svgs/971651e87c9aebb6ec102860c98ae161.svg?invert_in_darkmode" align=middle width=16.390298099999992pt height=14.15524440000002pt/> (energy units)
-* <img src="https://rawgit.com/kannykanishk/ops-lammps/main/svgs/d6328eaebbcd5c358f426dbea4bdbf70.svg?invert_in_darkmode" align=middle width=15.13700594999999pt height=22.465723500000017pt/>
-* <img src="https://rawgit.com/kannykanishk/ops-lammps/main/svgs/44bc9d542a92714cac84e01cbbb7fd61.svg?invert_in_darkmode" align=middle width=8.68915409999999pt height=14.15524440000002pt/> (distance units)
-* <img src="https://rawgit.com/kannykanishk/ops-lammps/main/svgs/4bdc8d9bcfb35e1c9bfb51fc69687dfc.svg?invert_in_darkmode" align=middle width=7.054796099999991pt height=22.831056599999986pt/> (distance units)
-* <img src="https://rawgit.com/kannykanishk/ops-lammps/main/svgs/3e18a4a28fdee1744e5e3f79d13b9ff6.svg?invert_in_darkmode" align=middle width=7.11380504999999pt height=14.15524440000002pt/> (distance units)
-* cutoff <img src="https://rawgit.com/kannykanishk/ops-lammps/main/svgs/dc118d444558d9150b042da57bed75ea.svg?invert_in_darkmode" align=middle width=13.290972749999991pt height=14.15524440000002pt/> (distance units)
+* <img src="https://latex.codecogs.com/gif.latex?D_0"/> (energy units)
+* <img src="https://latex.codecogs.com/gif.latex?%5Calpha"/> (1/distance units)
+* <img src="https://latex.codecogs.com/gif.latex?r_0"/> (distance units)
+* <img src="https://latex.codecogs.com/gif.latex?%5Calpha_m"/> (energy units) 
+* <img src="https://latex.codecogs.com/gif.latex?%5Calpha_p"/> (energy units)
+* <img src="https://latex.codecogs.com/gif.latex?%5Calpha_n"/> (energy units)
+* <img src="https://latex.codecogs.com/gif.latex?%5Calpha_c"/> (energy units)
+* K
+* a (distance units)
+* b (distance units)
+* c (distance units)
+* cutoff <img src="https://latex.codecogs.com/gif.latex?r_c"/> (distance units)
 
 The last coefficient is optional. If not specified, the global morse cutoff is used.
 

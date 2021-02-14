@@ -26,7 +26,7 @@ Steps to use:
 
 Style *ops* computes pairwise interactions with the formula:
 
-<p align="center"><img src="https://rawgit.com/kannykanishk/ops-lammps/main/svgs/439980efd4213d466cbdae06aef61cfb.svg?invert_in_darkmode" align=middle width=558.050394pt height=17.031940199999998pt/></p>
+<p align="center"><img src="https://latex.codecogs.com/gif.latex?E%3D%5Calpha_m%5Cphi_m%28r_%7Bij%7D%29&plus;%5Calpha_p%5Cphi_p%28n_i%2Cr_%7Bij%7D%29&plus;%5Calpha_n%5Cphi_n%28n_i%2Cn_j%2Cr_%7Bij%7D%29&plus;%5Calpha_c%5Cphi_c%28n_i%2Cn_j%2Cr_%7Bij%7D%29%5Cquad%20r%3Cr_c" align=middle width=558.050394pt height=17.031940199999998pt/></p>
 
 where
 

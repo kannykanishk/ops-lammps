@@ -26,36 +26,40 @@ Steps to use:
 
 Style *ops* computes pairwise interactions with the formula:
 
-![f1](https://latex.codecogs.com/svg.latex?\small&space;E&space;=&space;\alpha_m&space;\phi_m(r_{ij})&space;&plus;&space;\alpha_p&space;\phi_p(n_i,r_{ij})&space;&plus;&space;\alpha_n&space;\phi_n(n_i,n_j,r_{ij})&space;&plus;&space;\alpha_c&space;\phi_c(n_i,,n_j,r_{ij})&space;\qquad&space;r&space;<&space;r_c)
+$$
+\small&space;E&space;=&space;\alpha_m&space;\phi_m(r_{ij})&space;&plus;&space;\alpha_p&space;\phi_p(n_i,r_{ij})&space;&plus;&space;\alpha_n&space;\phi_n(n_i,n_j,r_{ij})&space;&plus;&space;\alpha_c&space;\phi_c(n_i,,n_j,r_{ij})&space;\qquad&space;r&space;<&space;r_c
+$$
 
 where
 
-   ![f2](https://latex.codecogs.com/svg.latex?\small&space;\phi_m(r_{ij})&space;=&space;D_0&space;\left[&space;e^{-&space;2&space;\alpha&space;(r&space;-&space;r_0)}&space;-&space;2&space;e^{-&space;\alpha&space;(r&space;-&space;r_0)}&space;\right])
+$$
+\small&space;\phi_m(r_{ij})&space;=&space;D_0&space;\left[&space;e^{-&space;2&space;\alpha&space;(r&space;-&space;r_0)}&space;-&space;2&space;e^{-&space;\alpha&space;(r&space;-&space;r_0)}&space;\right]
    
-   ![f3](https://latex.codecogs.com/svg.latex?\small&space;\phi_p(n_i,r_{ij})&space;=&space;(n_i&space;\cdot&space;r_{ij})^2\psi(r_{ij}))
+\small&space;\phi_p(n_i,r_{ij})&space;=&space;(n_i&space;\cdot&space;r_{ij})^2\psi(r_{ij})
    
-   ![f4](https://latex.codecogs.com/svg.latex?\small&space;\phi_n(n_i,n_j,r_{ij})&space;=&space;|n_i&space;-&space;n_j|^2\psi(r_{ij}))
+\small&space;\phi_n(n_i,n_j,r_{ij})&space;=&space;|n_i&space;-&space;n_j|^2\psi(r_{ij})
    
-   ![f5](https://latex.codecogs.com/svg.latex?\small&space;\phi_c(n_i,n_j,r_{ij})&space;=&space;((n_i&space;&plus;&space;n_j)&space;\cdot&space;r_{ij})^2\psi(r_{ij}))
+\small&space;\phi_c(n_i,n_j,r_{ij})&space;=&space;((n_i&space;&plus;&space;n_j)&space;\cdot&space;r_{ij})^2\psi(r_{ij})
    
-   ![f6](https://latex.codecogs.com/svg.latex?\small&space;\psi(r_{ij})=Ke^{(-\frac{x^2}{2a^2}-\frac{y^2}{2b^2}-\frac{z^2}{2c^2})})
+\small&space;\psi(r_{ij})=Ke^{(-\frac{x^2}{2a^2}-\frac{y^2}{2b^2}-\frac{z^2}{2c^2})}
+$$
    
 - Rc is the cutoff.
 - D₀, K are constants.
-- ![f7](https://latex.codecogs.com/svg.latex?\small&space;\alpha_m), ![f8](https://latex.codecogs.com/svg.latex?\small&space;\alpha_p), ![f9](https://latex.codecogs.com/svg.latex?\small&space;\alpha_n), ![f10](https://latex.codecogs.com/svg.latex?\small&space;\alpha_c) are weight constants for Morse potential, Co-planarity potential, Co-normality potential and Co-Circularity potential, respectively.
-- a, b, c are constants for weighting function ![f11](https://latex.codecogs.com/svg.latex?\small&space;\psi(r_{ij})). The weighting function provides either circular symmetricity (a=b=c), or weights particles more in certain planes.
+- $\small&space;\alpha_m$, $\small&space;\alpha_p$, $\small&space;\alpha_n$, $\small&space;\alpha_c$ are weight constants for Morse potential, Co-planarity potential, Co-normality potential and Co-Circularity potential, respectively.
+- a, b, c are constants for weighting function $\small&space;\psi(r_{ij})$. The weighting function provides either circular symmetricity (a=b=c), or weights particles more in certain planes.
 
 The 4 potentials used are Morse Potential, Co-Planarity Potential, Co-Normality Potential and Co-Corcularity Potential. Together, their weighted sum defines the potential energy of oriented particles.
 
 The first three coefficients and the cutoff can be defined for each pair of atoms types via the :doc:`pair_coeff <pair_coeff>` command as in the examples above, or in the data file or restart files read by the :doc:`read_data <read_data>` or :doc:`read_restart <read_restart>` commands (from LAMMPS doc). The remaining coefficients remain same for all atom pairs, hence needs to be specified in the main input file alongside `pair_coeff * *`:
 
 * D₀ (energy units)
-* ![f12](https://latex.codecogs.com/svg.latex?\small&space;\alpha) (1/distance units)
+* $\small&space;\alpha$ (1/distance units)
 * r₀ (distance units)
-* ![f7](https://latex.codecogs.com/svg.latex?\small&space;\alpha_m) (energy units) 
-* ![f8](https://latex.codecogs.com/svg.latex?\small&space;\alpha_p) (energy units)
-* ![f9](https://latex.codecogs.com/svg.latex?\small&space;\alpha_n) (energy units)
-* ![f10](https://latex.codecogs.com/svg.latex?\small&space;\alpha_c) (energy units)
+* $\small&space;\alpha_m$ (energy units) 
+* $\small&space;\alpha_p$ (energy units)
+* $\small&space;\alpha_n$ (energy units)
+* $\small&space;\alpha_c$ (energy units)
 * K
 * a (distance units)
 * b (distance units)

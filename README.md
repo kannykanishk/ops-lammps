@@ -30,11 +30,11 @@ Style *ops* computes pairwise interactions with the formula:
 
 where
 
-<p align="center"><img src="https://rawgit.com/kannykanishk/ops-lammps/main/svgs/61791d2792d07f249c60858eba21f8e1.svg?invert_in_darkmode" align=middle width=283.73085345pt height=29.58934275pt/></p>
-<p align="center"><img src="https://rawgit.com/kannykanishk/ops-lammps/main/svgs/6d3d32472a734e3c93ef5e99efab2688.svg?invert_in_darkmode" align=middle width=195.87115845pt height=18.905967299999997pt/></p>
-<p align="center"><img src="https://rawgit.com/kannykanishk/ops-lammps/main/svgs/7497228fe82b44cf6aadbce7c121a0ed.svg?invert_in_darkmode" align=middle width=230.99154375pt height=18.905967299999997pt/></p>
-<p align="center"><img src="https://rawgit.com/kannykanishk/ops-lammps/main/svgs/128054bb9bfd59e13821ef64f1400fab.svg?invert_in_darkmode" align=middle width=268.73841884999996pt height=18.905967299999997pt/></p>
-<p align="center"><img src="https://rawgit.com/kannykanishk/ops-lammps/main/svgs/a85311bb572d87be46bd80d72aa228d6.svg?invert_in_darkmode" align=middle width=193.65341819999998pt height=26.077949699999998pt/></p>
+<p align="center"><img src="https://latex.codecogs.com/gif.latex?%5Cphi_m%28r_%7Bij%7D%29%3DD_0%5Cleft%5Be%5E%7B-2%5Calpha%28r-r_0%29%7D-2e%5E%7B-%5Calpha%28r-r_0%29%7D%5Cright%5D" align=middle /></p>
+<p align="center"><img src="https://latex.codecogs.com/gif.latex?%5Cphi_p%28n_i%2Cr_%7Bij%7D%29%3D%28n_i.r_%7Bij%7D%29%5E2%5Cpsi%28r_%7Bij%7D%29" align=middle /></p>
+<p align="center"><img src="https://latex.codecogs.com/gif.latex?%5Cphi_n%28n_i%2Cn_j%2Cr_%7Bij%7D%29%3D%7Cn_i-n_j%7C%5E2%5Cpsi%28r_%7Bij%7D%29" align=middle /></p>
+<p align="center"><img src="https://latex.codecogs.com/gif.latex?%5Cphi_c%28n_i%2Cn_j%2Cr_%7Bij%7D%29%3D%28%28n_i&plus;n_j%29.r_%7Bij%7D%29%5E2%5Cpsi%28r_%7Bij%7D%29" align=middle /></p>
+<p align="center"><img src="https://latex.codecogs.com/gif.latex?%5Cpsi%28r_%7Bij%7D%29%3DKe%5E%7B%28-%5Cfrac%7Bx%5E2%7D%7B2a%5E2%7D-%5Cfrac%7By%5E2%7D%7B2b%5E2%7D-%5Cfrac%7Bz%5E2%7D%7B2c%5E2%7D%29%7D" align=middle /></p>
    
 - <img src="https://rawgit.com/kannykanishk/ops-lammps/main/svgs/dc118d444558d9150b042da57bed75ea.svg?invert_in_darkmode" align=middle width=13.290972749999991pt height=14.15524440000002pt/> is the cutoff.
 - <img src="https://rawgit.com/kannykanishk/ops-lammps/main/svgs/42fbe61bcc38cd8c7cb8a2f4abc9b4c7.svg?invert_in_darkmode" align=middle width=20.16214364999999pt height=22.465723500000017pt/>, <img src="https://rawgit.com/kannykanishk/ops-lammps/main/svgs/d6328eaebbcd5c358f426dbea4bdbf70.svg?invert_in_darkmode" align=middle width=15.13700594999999pt height=22.465723500000017pt/> are constants.

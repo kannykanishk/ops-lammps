@@ -38,8 +38,8 @@ where
    
 - <img src="https://latex.codecogs.com/gif.latex?r_c"/> is the cutoff.
 - Do, K are constants.
-- <img src="https://latex.codecogs.com/gif.latex?%5Calpha_m"/>, <img src="https://latex.codecogs.com/gif.latex?%5Calpha_p"/>, <img src="https://latex.codecogs.com/gif.latex?%5Calpha_n"/>, <img src="https://latex.codecogs.com/gif.latex?%5Calpha_c"/> are weight constants for Morse potential, Co-planarity potential, Co-normality potential and Co-Circularity potential, respectively.
-- a, b, c are constants for weighting function <img src="https://latex.codecogs.com/gif.latex?%5Cpsi%28r_%7Bij%7D%29" align=middle />. The weighting function provides either circular symmetricity (<img src="https://latex.codecogs.com/gif.latex?%5Cpsi%28r_%7Bij%7D%29"/>), or weights particles more in certain planes.
+- <img src="https://latex.codecogs.com/gif.latex?%5Calpha_m" />, <img src="https://latex.codecogs.com/gif.latex?%5Calpha_p" />, <img src="https://latex.codecogs.com/gif.latex?%5Calpha_n" />, <img src="https://latex.codecogs.com/gif.latex?%5Calpha_c" /> are weight constants for Morse potential, Co-planarity potential, Co-normality potential and Co-Circularity potential, respectively.
+- a, b, c are constants for weighting function <img src="https://latex.codecogs.com/gif.latex?%5Cpsi%28r_%7Bij%7D%29" />. The weighting function provides either circular symmetricity <img src="https://latex.codecogs.com/gif.latex?%5Cpsi%28r_%7Bij%7D%29" />, or weights particles more in certain planes.
 
 The 4 potentials used are Morse Potential, Co-Planarity Potential, Co-Normality Potential and Co-Corcularity Potential. Together, their weighted sum defines the potential energy of oriented particles.
 

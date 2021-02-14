@@ -36,10 +36,10 @@ where
 <p align="center"><img src="https://latex.codecogs.com/gif.latex?%5Cphi_c%28n_i%2Cn_j%2Cr_%7Bij%7D%29%3D%28%28n_i&plus;n_j%29.r_%7Bij%7D%29%5E2%5Cpsi%28r_%7Bij%7D%29" align=middle /></p>
 <p align="center"><img src="https://latex.codecogs.com/gif.latex?%5Cpsi%28r_%7Bij%7D%29%3DKe%5E%7B%28-%5Cfrac%7Bx%5E2%7D%7B2a%5E2%7D-%5Cfrac%7By%5E2%7D%7B2b%5E2%7D-%5Cfrac%7Bz%5E2%7D%7B2c%5E2%7D%29%7D" align=middle /></p>
    
-- <img src="https://latex.codecogs.com/gif.latex?r_c" align=middle /> is the cutoff.
+- <img src="https://latex.codecogs.com/gif.latex?r_c"/> is the cutoff.
 - Do, K are constants.
-- <img src="https://latex.codecogs.com/gif.latex?%5Calpha_m" align=middle />, <img src="https://latex.codecogs.com/gif.latex?%5Calpha_p" align=middle />, <img src="https://latex.codecogs.com/gif.latex?%5Calpha_n" align=middle />, <img src="https://latex.codecogs.com/gif.latex?%5Calpha_c" align=middle /> are weight constants for Morse potential, Co-planarity potential, Co-normality potential and Co-Circularity potential, respectively.
-- a, b, c are constants for weighting function <img src="https://latex.codecogs.com/gif.latex?%5Cpsi%28r_%7Bij%7D%29" align=middle />. The weighting function provides either circular symmetricity (<img src="https://rawgit.com/kannykanishk/ops-lammps/main/svgs/b11e6eeff71a96de798a5e4addc53da9.svg?invert_in_darkmode" align=middle width=66.6930165pt height=22.831056599999986pt/>), or weights particles more in certain planes.
+- <img src="https://latex.codecogs.com/gif.latex?%5Calpha_m"/>, <img src="https://latex.codecogs.com/gif.latex?%5Calpha_p"/>, <img src="https://latex.codecogs.com/gif.latex?%5Calpha_n"/>, <img src="https://latex.codecogs.com/gif.latex?%5Calpha_c"/> are weight constants for Morse potential, Co-planarity potential, Co-normality potential and Co-Circularity potential, respectively.
+- a, b, c are constants for weighting function <img src="https://latex.codecogs.com/gif.latex?%5Cpsi%28r_%7Bij%7D%29" align=middle />. The weighting function provides either circular symmetricity (<img src="https://latex.codecogs.com/gif.latex?%5Cpsi%28r_%7Bij%7D%29"/>), or weights particles more in certain planes.
 
 The 4 potentials used are Morse Potential, Co-Planarity Potential, Co-Normality Potential and Co-Corcularity Potential. Together, their weighted sum defines the potential energy of oriented particles.
 
